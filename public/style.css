@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Quicksand:wght@500;700&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+header.navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1 rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover {
+    background-color: #f4d03f;
+    border-radius: 999px;
+    color: white;
+}
+
+.style {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#content {
+    flex: 5;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+    margin: 20px;
+    
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+
+    z-index: 1;
+}
+
+.card th {
+    text-align: justify;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #content, aside {
+    width: 100%;
+    padding: 0;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+}
+
+.social-list{
+  display:flex;
+  list-style:none;
+  justify-content:center;
+  padding:0;
+}
+
+.social-list li{
+  padding:10px;
+  color:#000000;
+  font-size:19px;
+}
